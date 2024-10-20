@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szakdolgozat formálás</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br>
+    <header>Szakdolgozat</header> <br> <br>
+    <h3>A játékfejlesztés Unity-ben vagy Unreal Engine-ben</h3>
+    <p>
+        Egy izgalmas és összetett folyamat, amely számos technikai és kreatív kihívást tartogat.<br>
+        Ebben a dolgozatban a játékfejlesztés különböző aspektusait vizsgáljuk meg, különös tekintettel a <br>
+        Unity és Unreal Engine platformokra, a fizikai motorokra, a mesterséges intelligenciára (AI),<br>
+        valamint a multiplayer funkciók integrálására. Ezek az elemek kritikus szerepet játszanak a modern<br>
+         videojátékok létrehozásában, és hozzájárulnak a felhasználói élmény gazdagításához.</p>
+        <br>
+    <h3>1. A Unity és Unreal Engine bemutatása</h3>
+    <h5>1.1 Unity</h5>
+    <p>A Unity egy rendkívül népszerű, széles körben használt játékmotor, amelyet először 2005-ben mutattak be.<br>
+        A Unity az egyik legismertebb platform, amely lehetőséget ad a fejlesztőknek 2D és 3D játékok, interaktív alkalmazások,<br>
+        sőt, VR és AR (virtuális és kiterjesztett valóság) élmények létrehozására. Az egyik legnagyobb előnye a Unity-nek,<br>
+        hogy rendkívül felhasználóbarát, így kezdők és haladók egyaránt könnyen belevághatnak a használatába. Emellett<br>
+        a Unity fejlesztői környezete platformfüggetlen, ami azt jelenti, hogy egyszeri fejlesztéssel több különböző<br>
+        operációs rendszeren is futtatható játékokat hozhatunk létre, mint például Windows, macOS, Android, iOS,<br>
+        és még konzolok is támogatottak.
+        
+        A Unity támogatja a C# programozási nyelvet, ami egy modern, objektumorientált nyelv, és nagy rugalmasságot<br>
+        biztosít a fejlesztőknek a játékmenet finomhangolásában, a mesterséges intelligencia kialakításában,<br>
+        és egyéb interaktív funkciók megvalósításában.
+    </p>
+    <br><h5>1.2 Unreal Engine</h5>
+    <p>Unreal Engine
+
+        Az Unreal Engine egy másik vezető játékmotor, amelyet eredetileg az Epic Games fejlesztett. Az első<br>
+        verziója 1998-ban jelent meg, azóta pedig az Unreal Engine az iparág egyik legismertebb és legfejlettebb<br>
+        eszközévé vált. Az Unreal Engine különösen ismert a grafikai képességeiről, és számos AAA kategóriás játék<br>
+        készült ezzel a motorral. Az Unreal Engine 4 és az új Unreal Engine 5 olyan technológiákat használ, mint a<br>
+        Lumen (dinamikus megvilágítás) és a Nanite (virtuális geometria), amelyek lehetővé teszik a fejlesztők számára,<br>
+        hogy rendkívül részletes, fotorealisztikus környezeteket és karaktereket hozzanak létre. <br>
+        <br>
+        Az Unreal Engine a Blueprint rendszert kínálja, amely vizuális szkripteken keresztül lehetővé teszi,<br>
+        hogy programozási tudás nélkül is létrehozhassunk bonyolult játékmechanikákat. Ugyanakkor az Unreal Engine<br>
+        támogatja a C++ programozási nyelvet, ami nagyobb irányítást biztosít a fejlesztők számára.
+    </p>
+    <br><h3>2. A játékfejlesztés tervezési folyamata</h3>
+    <p>A játékfejlesztés mindenekelőtt egy jól átgondolt tervvel indul, amely magába foglalja a játék koncepcióját,<br>
+        a történetet, a karaktereket, a játékmenetet és a vizuális stílust. A tervezési szakasz kulcsfontosságú,<br>
+        mivel meghatározza a játék célját és közönségét. Ebben a szakaszban kell döntéseket hozni olyan kérdésekről,<br>
+        mint a játék műfaja (pl. szerepjáték, platformer, stratégiai játék),<br>
+        a játékosok száma (egyjátékos vagy többjátékos), és a játékvilág felépítése. <br> <br>
+
+        A játék koncepciójának meghatározása után következik a prototípus létrehozása, amely segít a fejlesztőkne<br>
+        tesztelni a játékmechanikákat és a játékélményt. A Unity és az Unreal Engine egyaránt támogatja a<br>
+        gyors prototípus-készítést, ami lehetőséget ad arra, hogy a fejlesztők gyorsan kipróbálják és<br>
+        finomhangolják az ötleteiket.
+    </p>
+    <h3>3. Fizikai motorok a játékokban</h3>
+    <p>A fizikai motorok felelősek a játékban zajló fizikai interakciók szimulálásáért. A modern videojátékok<br>
+        egyik legfontosabb eleme a valósághű fizika, legyen szó karakterek mozgásáról, tárgyak ütközéséről,<br>
+        vagy akár gravitációs hatásokról. Mind a Unity, mind az Unreal Engine tartalmazza a saját fizikai<br>
+        motorját, amelyek lehetővé teszik a fejlesztők számára, hogy valós idejű fizikát alkalmazzanak játékaikban.
+    </p>
+    <h5>3.1 Unity Physics és PhysX</h5>
+    <p>
+        A Unity alapértelmezett fizikai motorja a PhysX, amely az NVIDIA által fejlesztett fizikai szimulációs motor.<br>
+        A PhysX használatával a fejlesztők valósághű ütközéseket, merev testek interakcióit, valamint folyadékok és<br>
+        gázok mozgását szimulálhatják. A Unity fizikája a játékelemekre, mint például a karakterekre,<br>
+        járművekre vagy tárgyakra, valósághű mozgásokat és interakciókat biztosít.
+    </p>
+    <h5>3.2 Unreal Engine Physics és Chaos</h5>
+    <p>
+        Az Unreal Engine fizikai motorja, a Chaos, különösen erős a törés- és rombolásalapú fizikai<br>
+        interakciók szimulálásában. Ez lehetővé teszi, hogy a fejlesztők összetett rombolásokat és valós<br>
+        idejű fizikai hatásokat hozzanak létre, például amikor egy épület összedől egy robbanás következtében.<br>
+        A Chaos motor támogatja a merev testek, puha testek, folyadékok és anyagok valós idejű szimulációját is.
+    </p>
+    <h3>4. Mesterséges intelligencia a játékokban</h3>
+    <p>
+        A mesterséges intelligencia (AI) a modern játékok egyik legfontosabb komponense. Az AI felelős azért,<br>
+        hogy a játékban szereplő karakterek, például az NPC-k (Non-Playable Characters), önállóan, logikusan<br>
+        és a játékos cselekedeteire reagálva működjenek. Az AI rendszerek általában olyan funkciókat foglalnak<br>
+        magukban, mint az útkeresés, a harci viselkedés, a társalgási képességek, és a játékos viselkedésére adott válaszok.
+    </p>
+    <h5>4.1 Unity AI</h5>
+    <p>
+        A Unity számos eszközt kínál az AI fejlesztéséhez, beleértve a NavMesh rendszerét, amely<br>
+        az NPC-k mozgásának és útkeresésének alapjául szolgál. A NavMesh segítségével az NPC-k<br>
+        képesek navigálni a játék világában, akadályokat kikerülni, és dinamikusan alkalmazkodni<br>
+        a játékos cselekedeteihez. A Unity emellett támogatja a saját AI szkriptek írását C#-ban,<br>
+        így a fejlesztők egyedi viselkedéseket és döntéshozási rendszereket hozhatnak létre.
+    </p>
+    <h5>4.2 Unreal Engine AI</h5>
+    <p>
+        Az Unreal Engine AI rendszere rendkívül erős és testre szabható. Az AI viselkedésfa<br>
+        (Behavior Tree) rendszer lehetővé teszi, hogy a fejlesztők komplex döntési folyamatokat<br>
+        építsenek fel az NPC-k számára. Emellett az Unreal Engine tartalmazza a Blackboards nevű<br>
+        rendszert, amely egyfajta memóriát biztosít az NPC-k számára, így azok képesek reagálni<br>
+        a környezetükre és a játékos viselkedésére. Az Unreal Engine AI rendszere könnyen integrálható<br>
+        a fizikai és animációs rendszerekkel, így az NPC-k valósághűen mozoghatnak és cselekedhetnek.
+    </p>
+    <h3>5. Multiplayer funkciók integrálása</h3>
+    <p>
+        A multiplayer játékok népszerűsége az elmúlt években robbanásszerűen nőtt, köszönhetően az<br>
+        online játékok széles körű elérhetőségének és a közösségi élmény iránti keresletnek.<br>
+        A multiplayer játékok fejlesztése azonban komoly technikai kihívásokat jelent, mivel az<br>
+        adatokat folyamatosan szinkronizálni kell a játékosok között, és biztosítani kell, hogy<br>
+        minden játékos ugyanazt a játékvilágot lássa és tapasztalja.
+    </p>
+    <h5>5.1 Unity multiplayer</h5>
+    <p>
+        A Unity több megoldást is kínál a multiplayer játékok fejlesztésére, köztük a Mirror nevű keretrendszert,<br>
+        amely lehetővé teszi a szerver-kliens alapú játékok fejlesztését. A Unity multiplayer<br>
+        rendszere képes kezelni a hálózati kommunikációt, az adatcsomagok küldését és fogadását,<br>
+        valamint a játékosok közötti szinkronizációt.
+    </p>
+    <h5>5.2 Unreal Engine multiplayer</h5>
+    <p>
+        Az Unreal Engine hálózati funkcionalitásának használata egyszerűen integrálható a fejlesztés során.<br>
+        Alapvetően két kulcskomponens felelős a multiplayer működéséért: Replication és RPC-k (Remote Procedure Calls). Egy példa:
+    </p>
+    <h5>5.2.1 Replication (szinkronizáció)</h5>
+    <p>
+        A Replication az a folyamat, amely során a szerver biztosítja, hogy a kliens oldalon lévő játékosok ugyanazt a<br>
+        játékvilágot lássák. A replikáció célja, hogy az objektumok (például karakterek, járművek vagy egyéb interaktív elemek)<br>
+        szinkronizálva legyenek minden kliens és a szerver között. Ezt úgy érhetjük el, hogy az adott objektumokat<br>
+        replikálhatóvá tesszük a Blueprints vagy a C++ kód segítségével.<br>
+        A replikációhoz a megfelelő objektumoknak a "Replicate" tulajdonsága be van kapcsolva,<br>
+        és ezáltal a szerver megosztja az adott objektum állapotát a kliensekkel.
+    </p>
+    <h3>6. Hálózati architektúra a multiplayer játékokban</h3>
+    <h5>6.1 Szerver-kliens modell</h5>
+    <p>
+        A szerver-kliens modell az egyik leggyakrabban használt architektúra a multiplayer játékokban.<br>
+        Ebben a modellben egy központi szerver irányítja a játék világát, és a játékosok (kliensek)<br>
+        csatlakoznak ehhez a szerverhez. A szerver felelős az összes játékos cselekedeteinek<br>
+        szinkronizálásáért, a világ állapotának frissítéséért, és biztosítja, hogy minden kliens<br>
+        ugyanazt a valóságot lássa. Ez a modell azért előnyös, mert csökkenti az esélyét annak,<br>
+        hogy a játékosok manipulálják az adatokat, mivel a szerver határozza meg a játék állapotát.<br>
+        <br>
+        A szerver-kliens modell hátránya, hogy egy központi szerverrel szembeni magas terhelés keletkezik,<br>
+        különösen, ha sok játékos kapcsolódik egyszerre. Ezért nagyobb multiplayer játékok<br>
+        esetén a szervernek rendkívül erős hardverrel kell rendelkeznie, hogy biztosítani tudja<br>
+        a zökkenőmentes élményt minden játékos számára. A szerver leállása esetén az egész játék<br>
+        megszakadhat, ami kiemeli a szerver redundancia és megbízhatóság fontosságát.
+    </p>
+    <h5>6.2 Peer-to-peer (P2P) modell</h5>
+    <p>
+        A peer-to-peer modellben nincs központi szerver; a játékosok közvetlenül egymással<br>
+        kommunikálnak. Ez az architektúra csökkenti a központi szerver terhelését és költségeit,<br>
+        ugyanakkor komoly szinkronizációs kihívásokat jelenthet, mivel minden játékosnak frissítenie<br>
+        kell a többi játékos cselekedeteit. A P2P modell egyes esetekben érzékenyebb lehet<br>
+        a csalásra, mivel minden játékos saját magának határozza meg az adatait, amit manipulálhat.<br>
+        <br>
+        A P2P modell előnye, hogy költséghatékonyabb lehet, és kisebb játékok, vagy<br>
+        olyan multiplayer játékok esetén, ahol nincs szükség sok játékos valós idejű<br>
+        szinkronizálására, megfelelő választás lehet. Ezen felül a P2P rendszer jobban skálázható,<br>
+        hiszen új játékosok csatlakozása nem növeli egy központi szerver terhelését.</p>
+
+    <h3>7. Játékfejlesztési kihívások: szinkronizáció és késleltetés kezelése</h3>
+    <p>A multiplayer játékok egyik legnagyobb kihívása a hálózati késleltetés és a szinkronizáció.<br>
+        A késleltetés azt az időt jelenti, amíg a kliens és a szerver közötti adatcsomagok elérik a céljukat.<br>
+        Ha a késleltetés túl nagy, a játékosok észlelhetik a lag-ot, amely tönkreteheti a játékélményt,<br>
+        különösen gyors tempójú, reakcióidőre építő játékok esetén, mint például FPS-ek (first-person shooter).
+    </p>
+    <h5>7.1 Késleltetés csökkentése</h5>
+    <p>A késleltetés csökkentésére számos módszer létezik. Az egyik módszer a lag kompenzáció,<br>
+        amely során a szerver előrejelzéseket tesz a játékosok mozgására és cselekedeteire,<br>
+        hogy a késleltetést ellensúlyozza. Például ha egy játékos céloz és lő egy ellenségre,<br>
+        a szerver megpróbálja kitalálni, hogy az ellenség hol volt abban a pillanatban, amikor<br>
+        a lövés megtörtént, nem pedig ott, ahol a szerver éppen most látja.<br>
+        <br>
+        Másik fontos tényező a hálózati adatcsomagok optimalizálása. A multiplayer játékok<br>
+        adatcseréje rendkívül intenzív lehet, különösen akkor, ha nagy számú játékos van jelen.<br>
+        Ezért a fejlesztőknek ügyelniük kell arra, hogy minimalizálják az elküldött és fogadott<br>
+        adatok mennyiségét. Az adatcsomagoknak csak a legszükségesebb információkat kell tartalmazniuk,<br>
+        mint például a játékosok pozícióját, állapotát és cselekedeteit.
+    </p>
+    <h3>8. Fizikai motorok és multiplayer játékok</h3>
+    <p>A multiplayer játékokban a fizikai motor használata különösen kihívásos lehet, mivel minden játékos<br>
+        számára azonos módon kell szimulálni a fizikai interakciókat. Például ha egy tárgyat egy játékos<br>
+        eldob, akkor azt minden játékos számára ugyanabban az időben és helyen kell megjeleníteni,<br>
+        hogy a szinkronizáció tökéletes legyen.
+    </p>
+    <h5>8.1 Fizikai motorok szinkronizációja</h5>
+    <p>A fizikai interakciók szinkronizálásához különféle módszerek alkalmazhatók. Az egyik lehetséges megoldás az,<br>
+        hogy a fizikai szimulációkat a szerver végzi el, majd a szerver közli az eredményeket a kliensekkel.<br>
+        Így a szerver biztosítja, hogy minden játékos ugyanazt az eredményt látja. Ez a megközelítés<br>
+        biztosítja a pontos szinkronizációt, de magas szervererőforrás-igénnyel jár.<br>
+        <br>
+        Alternatív megoldásként a fizikai szimulációk lokálisan is elvégezhetők a klienseken, majd<br>
+        az eredményeket szinkronizálják a szerverrel. Ez a módszer csökkenti a szerver terhelését,<br>
+        de megnöveli annak kockázatát, hogy eltérések alakulnak ki<br>
+        a játékosok által látott fizikai interakciók között, különösen magas késleltetés esetén.
+    </p>
+    <h3>9. Eszközkészletek a multiplayer játékok fejlesztéséhez</h3>
+    <p>A Unity és az Unreal Engine is rendelkezik olyan eszközökkel és keretrendszerekkel,<br>
+        amelyek megkönnyítik a multiplayer játékok fejlesztését.</p>
+    <h5>9.1 Unity multiplayer eszközei</h5>
+    <p>A Unity rendelkezik beépített hálózati megoldásokkal, mint például a korábban említett Mirror,<br>
+        amely kifejezetten a szerver-kliens alapú játékok fejlesztésére lett tervezve. A Mirror<br>
+        egyszerűsíti a hálózati kommunikációt, és támogatja a szinkronizációs folyamatokat, valamint<br>
+        lehetővé teszi az egyszerű felhasználói interfészek létrehozását a hálózati állapot nyomon követésére.<br>
+        <br>
+        A Unity újabb multiplayer keretrendszere, a Netcode for GameObjects egy másik lehetőséget biztosít<br>
+        a fejlesztők számára. Ez az eszköz lehetővé teszi, hogy objektumokat szinkronizáljunk a játékosok<br>
+        között, és egyszerűsíti a hálózati kommunikációt, például az adatcsomagok küldését és fogadását.
+    </p>
+    <h5>9.2 Unreal Engine multiplayer eszközei</h5>
+    <p>
+        Az Unreal Engine erős hálózati támogatással rendelkezik a multiplayer játékok fejlesztéséhez.<br>
+        Az Unreal Multiplayer Framework lehetővé teszi a fejlesztők számára, hogy könnyedén létrehozzanak szerver-kliens<br>
+        alapú játékokat, valamint támogatja a peer-to-peer kapcsolatokat is. Az Unreal Engine natív<br>
+        hálózati rendszere automatikusan szinkronizálja az objektumokat és a játékállapotot a játékosok között.<br>
+    <br>
+        Az Unreal Engine Online Subsystem egy másik erőteljes eszköz, amely támogatja a többplatformos<br>
+        multiplayer funkciókat. Ez az alrendszer integrálható különböző online szolgáltatásokkal, például<br>
+        az Xbox Live-val, a PlayStation Network-kel vagy a Steam-mel,<br>
+        lehetővé téve a könnyű hálózati kapcsolatok kiépítését.
+    </p>
+    <h3>10. Játékfejlesztés jövője és trendek</h3>
+    <p>A játékfejlesztés folyamatosan fejlődik, és új technológiák jelennek meg, amelyek megváltoztatják<br>
+        a fejlesztési folyamatot. A következő években várhatóan többek között a felhő alapú játékok,<br>
+        a cross-platform fejlesztés, valamint az AI és gépi tanulás integrációja fogja meghatározni a jövőbeli trendeket.
+    </p>
+    <h5>10.1 Felhő alapú játékok</h5>
+    <p>A felhő alapú játékfejlesztés lehetővé teszi, hogy a játékok közvetlenül a felhőben fussanak,<br>
+        ahelyett, hogy a játékosok hardverén futnának. Ez lehetőséget ad arra, hogy a fejlesztők nagyobb<br>
+        teljesítményű játékokat hozzanak létre, amelyek futtatásához a felhasználóknak nem szükséges<br>
+        nagy teljesítményű hardverrel rendelkezniük.
+    </p>
+</body>
+</html>
